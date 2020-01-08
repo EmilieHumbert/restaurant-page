@@ -1,11 +1,48 @@
 <!doctype html>
 <html>
   <head>
-    <title>Getting Started</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Restaurant page</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
   <body>
-    <div id="content">
-
+    <div id="wrapper">
+      <header class="main-head">
+        <img src="../logo.png" class="main-logo" alt="logo" href="#">
+      </header>
+      <nav class="main-nav" id="main-nav">
+        <div href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <img src="../menu.svg" alt="hamburger-icon" id="hamburger-icon"></img>
+        </div>
+        <div class="nav-home">
+          <a href="#" class="nav-links">Home</a>
+        </div>  
+        <div class="nav-menu">
+          <a href="#" class="nav-links">Menu</a>
+        </div> 
+        <div class="nav-logo">
+          <img src="../logo.png" class="logo" alt="logo" href="#">
+        </div> 
+        <div class="nav-about-us">
+          <a href="#" class="nav-links">About us</a>
+        </div> 
+        <div class="nav-contact">
+          <a href="#" class="nav-links">Contact</a>
+        </div> 
+      </nav>
+      <div class="main-content">
+        <img src="../ramen.jpg" alt="ramen bowl" class="banner">
+        <p class="content">"For a bowl of soul warming,<br>
+          slurp-able goodness, <br>
+          head to Ponsonby's hot <br>
+          new Ramen restaurant." <br>
+          The Denizen</p>
+      </div>
+      <footer class="main-footer"></footer>
     </div>
     <script src="main.js"></script>  
   </body>
