@@ -7,7 +7,7 @@ function createHomePage() {
   const backgroundImage = document.createElement('img');
   backgroundImage.setAttribute('class', 'banner');
   backgroundImage.setAttribute('alt', 'ramen bowl');
-  backgroundImage.src = '../ramen.jpg';
+  backgroundImage.src = 'images/ramen.jpg';
   mainContent.append(backgroundImage);
 
   // Content text

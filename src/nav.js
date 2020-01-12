@@ -27,7 +27,7 @@ function nav() {
   navLogo.setAttribute('id', 'logo');
   navLogo.setAttribute('class', 'nav-Logo');
   navLogo.setAttribute('alt', 'logo');
-  navLogo.src = '../logo.png';
+  navLogo.src = 'images/logo.png';
   nav.append(navLogo);
 
   // Aboutus nav

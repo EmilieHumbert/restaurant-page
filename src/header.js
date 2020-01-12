@@ -15,7 +15,7 @@ function header() {
   const logo = document.createElement('img');
   logo.setAttribute('class', 'main-logo');
   logo.setAttribute('alt','logo');
-  logo.src = '../logo.png';
+  logo.src = 'images/logo.png';
   header.append(logo);
   
   // Add the div with menu and function
@@ -28,7 +28,7 @@ function header() {
   const menuIcon = document.createElement('img');
   menuIcon.setAttribute('id', 'hamburger-icon');
   menuIcon.setAttribute('alt', 'hamburger-icon');
-  menuIcon.src = '../menu.svg';
+  menuIcon.src = 'images/menu.svg';
   menuButton.append(menuIcon);
   
   return header;

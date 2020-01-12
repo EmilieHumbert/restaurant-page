@@ -6,7 +6,7 @@ function createMenuPage() {
   const mainMenu = document.createElement('img');
   mainMenu.setAttribute('class', 'mainMenu');
   mainMenu.setAttribute('alt', 'ramen menu');
-  mainMenu.src = '../main_ramen_menu.jpg';
+  mainMenu.src = 'images/main_ramen_menu.jpg';
   mainContent.append(mainMenu);
 
   return mainContent;
