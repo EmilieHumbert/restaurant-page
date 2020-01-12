@@ -28,10 +28,6 @@ body {
   grid-area: main;
 }
 
-.main-footer {
-  grid-area: footer;
-}
-
 .banner {
   grid-area: banner;
   max-width: 100%;
@@ -48,7 +44,50 @@ body {
 }
 
 
-/* media queries */
+/* About us */
+.aboutus {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100%;
+  text-align: justify;
+  padding: 2rem;
+  margin: 10% 20%;
+  border: solid 1px #fff;
+}
+
+.aboutRestaurant {
+  padding-bottom: 2rem;
+}
+
+/* Menu */
+.mainMenu {
+  height: 100%;
+  width: 100%;
+}
+
+/* Contact */
+.findus {
+  color: #fff;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100%;
+  padding: 2rem;
+  margin: 10% 20%;
+  border: solid 1px #fff;
+}
+
+.findus h3 {
+  margin-bottom: 0;
+}
+
+.address,
+.contactus,
+.hours {
+  margin-top: 0;
+}
+
+
+/* Media queries */
 @media (max-width: 499px) {
   #content {
     display: grid;
@@ -57,8 +96,7 @@ body {
       "nav"
       "main"
       "banner"
-      "content"
-      "footer";
+      "content";
   }
 
   .main-nav a {
@@ -72,11 +110,13 @@ body {
     display: block;
   }
 
-/* open hamburger */ 
+/* Open hamburger */ 
   .main-nav.open {
     position: absolute;
-    right: 3rem;
-    padding-top: 3rem;
+    right: 0.75rem;
+    margin-top: 3rem;
+    padding: 1rem;
+    background-color: rgba(50,50,50,0.8);
   }
 
   .main-nav.open .nav-home {
@@ -99,16 +139,21 @@ body {
     color: grey;
   }
 
-  /* logo */
+  /* Logo */
   .main-logo {
-    height: 2.5rem;
-    width: 2.5rem;
     position: absolute;
     left: 0.3125rem;
+    height: 2.5rem;
+    width: 2.5rem;
   }
 
   #logo{
     display: none;
+  }
+
+  /* Menu */
+  .mainMenu {
+    padding-top: 3rem;
   }
 }
 
@@ -118,8 +163,7 @@ body {
     grid-template-areas: 
       "header  header"
       "nav     nav"
-      "main    main"
-      "footer  footer";
+      "main    main";
     overflow: hidden;
   }
 
@@ -165,9 +209,10 @@ body {
 
   .text {
     position: absolute;
-    right: 1rem;
-    font-size: 0.9rem;  
+    right: 1rem;  
     justify-content: right;
+    height: 9.375rem;
+    width: 9.375rem;
   }
 
   #logo {
@@ -179,26 +224,32 @@ body {
 @media (min-width: 600px) {
   .text {
     right: 1rem;
-    font-size: 1rem;
+    font-size: 1.4rem;
+    height: 13.375rem;
+    width: 12.375rem;
   }
 }
 
 @media (min-width: 800px) {
   .text {
     right: 4rem;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    height: 13.375rem;
+    width: 12.375rem;
   }
 
   .logo {
+    padding: 0.875rem 1rem;
     height: 3.5rem;
     width: 3.5rem;
-    padding: 0.875rem 1rem;
   }
 }
 
 @media (min-width: 1200px) {
   .text {
     right: 6rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    height: 13.375rem;
+    width: 22rem;
   }
 }
